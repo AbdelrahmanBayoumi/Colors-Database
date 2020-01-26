@@ -1,0 +1,8 @@
+[24-01-2020] [06:35:02 PM] => ColorsDatabase launched
+[24-01-2020] [06:35:24 PM] => ColorsDatabase closed
+[24-01-2020] [06:43:11 PM] => ColorsDatabase launched
+[24-01-2020] [06:43:18 PM] => ColorsDatabase closed
+[24-01-2020] [06:46:32 PM] => ColorsDatabase launched
+[24-01-2020] [06:46:37 PM] => ColorsDatabase closed
+[24-01-2020] [08:39:55 PM] => ColorsDatabase launched
+[24-01-2020] [08:40:01 PM] => ColorsDatabase closed
