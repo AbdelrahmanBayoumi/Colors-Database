@@ -1,0 +1,220 @@
+/* 
+    Created on : Jan 15, 2020, 5:31:35 PM
+    Author     : Abdelrahman Bayoumi
+*/
+* {
+    -fx-primary :  #2EAFD9;
+    -fx-secondary :  #005E7C;
+    /*button*/
+    -fx-primary-button :  #2EAFD9;
+    -fx-primary-button-text :  #ffffff;
+    -fx-primary-button-hover: #279dc3;
+    -fx-primary-button-foucsed: #1e8cb0;
+    /*text*/
+    -fx-primary-text : #000000;
+    -fx-secondary-text : #B2E0FF;
+}
+.root{
+    -fx-background-color: #f4f4f4;
+}
+.button{
+    -fx-text-fill: -fx-primary-button-text;
+    -fx-background-color: -fx-primary-button;
+    -fx-background-radius: 20;
+}
+.button:hover{
+    -fx-background-color: -fx-primary-button-hover;
+    -fx-cursor: hand;
+}
+.closebutton{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+.closebutton:hover{
+    -fx-background-color: red;
+}
+.minimizebutton, .resizebutton{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+.task-pane{
+    -fx-background-color: transparent;
+    -fx-background-color: black;
+}
+.task-pane .label{
+    -fx-text-fill: -fx-secondary;
+    -fx-text-fill: white;
+}
+.closePane{
+    -fx-background-color: black;
+}
+.titlePane{
+    -fx-background-color: #1976D2;
+}
+.titlePane .label{
+    -fx-text-fill: white;
+}
+.text-field-new{
+    -fx-prompt-text-fill: #78deff;
+    -fx-text-inner-color: #2EAFD9;
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.label-normal{
+    -fx-text-fill: #005E7C;
+}
+.project-btn{
+    -fx-text-fill: -fx-secondary;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-font-weight: BOLD;
+}
+.project-btn:hover{
+    -fx-text-fill: white;
+    /*-fx-background-color: -fx-primary;*/
+    -fx-background-color: lightgray;
+}
+.project-boxview{
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+}
+.project-boxview:hover{
+    -fx-cursor: hand;
+}
+
+.back-btn{
+    -fx-text-fill: -fx-primary-button-text;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+.back-btn:hover{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.project-name{
+    -fx-text-fill: black;
+}
+.jfx-color-picker-project {
+    -fx-focus-traversable: false;
+    -fx-color-label-visible: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0), 10, 0, 0, 0);
+}
+.jfx-color-picker-project .color-label {
+    -fx-background-image: url("/colorsdatabase/resources/palette.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-cursor: hand;
+}
+.jfx-color-picker-project .color-box {
+    visibility: hidden;
+}
+.color-box{
+    -fx-background-color: white;
+    -fx-background-radius:20;
+}
+.variable-name{
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+.variable-name:hover{
+    -fx-background-color: transparent;
+}
+.color-item{
+    -fx-text-fill: yellow;
+    -fx-background-color: green;
+}
+.delete-icon{
+    -fx-fill:gray;
+    -fx-cursor: hand;
+}
+.check-icon{
+    -fx-fill:lime;
+    -fx-cursor: hand;
+}
+.about-label:hover{
+    -fx-cursor: hand;
+}
+.aboutPane{
+    -fx-background-color: #B2E0FF;
+    -fx-border-width:5;
+    -fx-border-color: #1e3953;
+}
+.btn-contact:hover {
+    -fx-cursor: hand;
+    -fx-fill: #9999ff;
+}
+
+.trans-field{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-secondary;
+    -fx-font-weight: BOLD;
+    -fx-cursor: hand;
+}
+
+/*  menubar */
+.menu-bar .label {
+    -fx-text-fill: white;
+    -fx-border-width: 0;
+    -fx-font-size: 17;
+}
+
+.menu-item:focused {
+    -fx-background-color:  -fx-secondary;
+}
+
+.menu-item .label {
+    -fx-text-fill: black;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill:  white;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: white;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+}
+
+
+/* tabPane */
+.tab{
+    -fx-background-radius: 20 20 0 0;
+    -fx-text-fill: -fx-primary-button-text;
+    -fx-font-size: 17;
+    -fx-font-weight: BOLD;
+    -fx-background-color: #005E7C;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+    -fx-pref-height: 31;
+    -fx-pref-width: 420;
+}
+.tab:hover{
+    -fx-background-color:#005E7C;
+}
+.tab-selected{
+    -fx-background-radius: 20 20 0 0;
+    -fx-text-fill: black;
+    -fx-font-size: 17;
+    -fx-font-weight: BOLD;
+    -fx-background-color: #F4F4F4;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+    -fx-pref-height: 31;
+    -fx-pref-width: 420;
+}
+.tab-selected:hover{
+    -fx-background-color: #F4F4F4;
+}

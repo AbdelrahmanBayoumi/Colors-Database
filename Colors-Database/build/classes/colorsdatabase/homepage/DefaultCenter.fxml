@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="sp" fitToWidth="true" focusTraversable="false" prefHeight="596.0" prefWidth="900.0" style="-fx-border-color: #F4F4F4;" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="colorsdatabase.homepage.DefaultCenterController">
+   <content>
+      <VBox alignment="TOP_CENTER" onScroll="#scrollHandler">
+         <children>
+            <HBox alignment="CENTER" prefHeight="71.0" prefWidth="855.0" spacing="20.0">
+               <children>
+                  <Label styleClass="label-normal" text="New Porject">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="projectNameField" onAction="#add" prefHeight="32.0" prefWidth="337.0" promptText="project name" styleClass="text-field-new">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <JFXButton onAction="#add" prefHeight="31.0" prefWidth="88.0" text="Add">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+            </Separator>
+            <FlowPane fx:id="flowpane_instance" alignment="CENTER" columnHalignment="CENTER" hgap="90.0" vgap="30.0">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <AnchorPane prefHeight="66.0" prefWidth="827.0" styleClass="project-boxview">
+                     <children>
+                        <FontAwesomeIconView fill="LIME" glyphName="CHECK" size="25" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="669.0" layoutY="51.0" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.51171875" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="21.0" />
+                        <TextField editable="false" layoutX="41.0" layoutY="18.0" prefHeight="31.0" prefWidth="507.0" styleClass="trans-field" text="Hello Hello Hello Hello " AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="18.0">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="66.0" prefWidth="827.0" styleClass="project-boxview">
+                     <children>
+                        <FontAwesomeIconView fill="LIME" glyphName="CHECK" size="25" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="669.0" layoutY="51.0" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.51171875" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="21.0" />
+                        <TextField editable="false" layoutX="41.0" layoutY="18.0" prefHeight="31.0" prefWidth="507.0" styleClass="trans-field" text="Hello Hello Hello Hello ">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="66.0" prefWidth="827.0" styleClass="project-boxview">
+                     <children>
+                        <FontAwesomeIconView fill="LIME" glyphName="CHECK" size="25" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="669.0" layoutY="51.0" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.51171875" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="21.0" />
+                        <TextField editable="false" layoutX="41.0" layoutY="18.0" prefHeight="31.0" prefWidth="507.0" styleClass="trans-field" text="Hello Hello Hello Hello ">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="66.0" prefWidth="827.0" styleClass="project-boxview">
+                     <children>
+                        <FontAwesomeIconView fill="LIME" glyphName="CHECK" size="25" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="669.0" layoutY="51.0" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.51171875" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="21.0" />
+                        <TextField editable="false" layoutX="41.0" layoutY="18.0" prefHeight="31.0" prefWidth="507.0" styleClass="trans-field" text="Hello Hello Hello Hello ">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="66.0" prefWidth="827.0" styleClass="project-boxview">
+                     <children>
+                        <FontAwesomeIconView fill="LIME" glyphName="CHECK" size="25" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="669.0" layoutY="51.0" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.51171875" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="21.0" />
+                        <TextField editable="false" layoutX="41.0" layoutY="18.0" prefHeight="31.0" prefWidth="507.0" styleClass="trans-field" text="Hello Hello Hello Hello ">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="66.0" prefWidth="827.0" styleClass="project-boxview">
+                     <children>
+                        <FontAwesomeIconView fill="LIME" glyphName="CHECK" size="25" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="669.0" layoutY="51.0" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.51171875" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="21.0" />
+                        <TextField editable="false" layoutX="41.0" layoutY="18.0" prefHeight="31.0" prefWidth="507.0" styleClass="trans-field" text="Hello Hello Hello Hello ">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="66.0" prefWidth="827.0" styleClass="project-boxview">
+                     <children>
+                        <FontAwesomeIconView fill="LIME" glyphName="CHECK" size="25" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="669.0" layoutY="51.0" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.51171875" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="21.0" />
+                        <TextField editable="false" layoutX="41.0" layoutY="18.0" prefHeight="31.0" prefWidth="507.0" styleClass="trans-field" text="Hello Hello Hello Hello ">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="66.0" prefWidth="827.0" styleClass="project-boxview">
+                     <children>
+                        <FontAwesomeIconView fill="LIME" glyphName="CHECK" size="25" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0" />
+                        <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="669.0" layoutY="51.0" size="25" styleClass="delete-icon" AnchorPane.bottomAnchor="20.51171875" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="21.0" />
+                        <TextField editable="false" layoutX="41.0" layoutY="18.0" prefHeight="31.0" prefWidth="507.0" styleClass="trans-field" text="Hello Hello Hello Hello ">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </FlowPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </content>
+</ScrollPane>

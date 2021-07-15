@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP" prefHeight="596.0" prefWidth="900.0" styleClass="root" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="colorsdatabase.colorpicker.ColorPickerController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" spacing="22.0" style="-fx-background-color: WHITE; -fx-background-radius: 40;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="176.0">
+                     <children>
+                        <JFXColorPicker fx:id="color_picker" focusTraversable="false" prefHeight="31.0" prefWidth="74.0" styleClass="jfx-color-picker-project" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="color_Textfield" alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="280.0" styleClass="text-field-new" text="#FFFFFF" />
+                  <JFXButton focusTraversable="false" graphicTextGap="10.0" onAction="#copyHex" prefHeight="31.0" prefWidth="148.0" text="Copy">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="COPY" size="20" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="30.0" top="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefWidth="780.0" spacing="60.0" style="-fx-background-color: WHITE; -fx-background-radius: 40;">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="134.0" styleClass="label-normal" text="RGB">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="140.0" spacing="20.0">
+                     <children>
+                        <HBox spacing="30.0">
+                           <children>
+                              <TextField fx:id="red_Textfield" alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="280.0" styleClass="text-field-new" text="#FFFFFF" />
+                              <JFXButton focusTraversable="false" graphicTextGap="10.0" onAction="#copyRed" prefHeight="31.0" prefWidth="148.0" text="Copy">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="COPY" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox spacing="30.0">
+                           <children>
+                              <TextField fx:id="green_Textfield" alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="280.0" styleClass="text-field-new" text="#FFFFFF" />
+                              <JFXButton focusTraversable="false" graphicTextGap="10.0" onAction="#copyGreen" prefHeight="31.0" prefWidth="148.0" text="Copy">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="COPY" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox spacing="30.0">
+                           <children>
+                              <TextField fx:id="blue_Textfield" alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="280.0" styleClass="text-field-new" text="#FFFFFF" />
+                              <JFXButton focusTraversable="false" graphicTextGap="10.0" onAction="#copyBlue" prefHeight="31.0" prefWidth="148.0" text="Copy">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="COPY" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="30.0" top="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

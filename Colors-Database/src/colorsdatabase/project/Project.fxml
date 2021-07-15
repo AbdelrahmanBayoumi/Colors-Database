@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToWidth="true" prefHeight="596.0" prefWidth="900.0" style="-fx-border-color: #f4f4f4;" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="colorsdatabase.project.ProjectController">
+   <content>
+      <AnchorPane>
+         <children>
+            <VBox alignment="TOP_CENTER" prefWidth="898.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="projectName" styleClass="project-name" text="Project Name">
+                     <font>
+                        <Font name="Eras Bold ITC" size="45.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER" prefHeight="71.0" prefWidth="855.0" spacing="20.0">
+                     <children>
+                        <Label styleClass="label-normal" text="New Color">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="variable_name" prefHeight="31.0" prefWidth="258.0" promptText="Variable Name" styleClass="text-field-new" />
+                        <TextField fx:id="color_Textfield" prefHeight="31.0" prefWidth="146.0" styleClass="text-field-new" text="#FFFFFF" />
+                        <JFXColorPicker fx:id="color_picker" focusTraversable="false" prefHeight="39.0" prefWidth="56.0" styleClass="jfx-color-picker-project" />
+                        <JFXButton onAction="#add" prefHeight="31.0" prefWidth="88.0" text="Add">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <FlowPane fx:id="flowpane_instance" alignment="CENTER" columnHalignment="CENTER" hgap="90.0" vgap="30.0">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <VBox alignment="CENTER" prefWidth="200.0" styleClass="color-box">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT">
+                                 <children>
+                                    <FontAwesomeIconView fill="GREY" glyphName="TRASH" size="20" styleClass="delete-icon" />
+                                 </children>
+                              </HBox>
+                              <JFXButton prefHeight="31.0" prefWidth="160.0" styleClass="variable-name" text="-fx-primary" />
+                              <JFXButton prefHeight="129.0" prefWidth="160.0" styleClass="color-item" text="#FFFFFF" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="3.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </FlowPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#backAction" styleClass="back-btn" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ARROW_RIGHT" size="30" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
