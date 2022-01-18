@@ -8,6 +8,8 @@ Colors Database App is a desktop application used to store colors in Hex Code an
  
  <a href="https://github.com/AbdelrahmanBayoumi/Colors-Database/blob/master/LICENSE">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg">
+ </a>  <a href="https://www.java.com">
+  <img src="https://img.shields.io/badge/Java-8-red.svg">
  </a>
  
 </div>
@@ -25,6 +27,15 @@ Desktop application for:
 ## Download 64-bit EXE
 
 <a href="https://github.com/AbdelrahmanBayoumi/Colors-Database/releases/download/v1.0/ColorsDatabase-1.0.exe">⬇️⬇️ Click Here ⬇️⬇️</a>
+
+## Demo
+
+<div align="center">
+ <a href="https://youtu.be/ODfQ0pjaNRI">
+  <img src="https://user-images.githubusercontent.com/48678280/150007919-1625f051-0f4b-41c4-8eee-138d2785337c.png" width="70%">
+ </a>
+</div>
+
 
 
 ## Getting Started
